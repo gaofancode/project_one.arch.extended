@@ -262,7 +262,7 @@ public static class QueryUtils
                     private {{staticModifier}} Query _{{queryMethod.MethodName}}_Query;
 
                     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-                    public {{staticModifier}} void {{queryMethod.MethodName}}Query(World world {{data}}){
+                    private {{staticModifier}} void {{queryMethod.MethodName}}Query(World world {{data}}){
                      
                         if(!_{{queryMethod.MethodName}}_Initialized){
                             _{{queryMethod.MethodName}}_Query = world.Query(in {{queryMethod.MethodName}}_QueryDescription);
